@@ -1,0 +1,31 @@
+[core]
+    excludefile = /Users/myfinder/.gitignore
+    excludesfile = /Users/myfinder/.gitignore_global
+    editor = /usr/bin/vim
+
+[user]
+    name = Tatsuro Hisamori
+    email = medianetworks@gmail.com
+
+[gc]
+    auto = 1
+
+[color]
+    ui = auto
+
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+
+[push]
+    default = matching
