@@ -2,6 +2,8 @@
     excludefile = /Users/myfinder/.gitignore
     excludesfile = /Users/myfinder/.gitignore_global
     editor = /usr/bin/vim
+    autoCRLF = false
+    whitespace = cr-at-eol
 
 [user]
     name = Tatsuro Hisamori
@@ -14,10 +16,13 @@
     ui = auto
 
 [alias]
-    co = checkout
-    ci = commit
     st = status
+    co = checkout
     br = branch
+    ci = commit
+    cm = commit
+    df = diff
+    gr = grep
 
 [difftool "sourcetree"]
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
